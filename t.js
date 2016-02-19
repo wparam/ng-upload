@@ -4,8 +4,15 @@
 				directive("ac", ['$templateCache', '$sce', '$timeout', aotuComplete]);
 
 	function aotuComplete($templateCache, $sce,  $timeout){	
-		$templateCache.put('default.html', 
-			['<div class="autocomplete-container">',
+		$templateCache.put('ac-upload.html', 
+			['<div class="upload-container">',
+                '<form class="form-inline">',
+                    '<div class="ac-research-ops-panel class="form-group">',
+                        '<button class="btn ac-btn-default">Choose File</button>',
+                        '<input type="text" ng-model="uploadCtrl.filePath" class="form-control ac-research-manangername-txt"/>',
+                        '<button class="btn ac-btn-default">Preview</button>',
+                    '</div>',
+                '</form>',
 			'</div>'].join('')
 			);
 		return {
