@@ -1,0 +1,20 @@
+.ac-upload-container .progress {
+  height: 5px;
+  margin-bottom: 0;
+  width: 100%;
+}
+.ac-upload-container .ops-panel .filebtn {
+  width: 120px;
+  height: 32px;
+  padding: 3px 12px;
+}
+.ac-upload-container .ops-panel .filepath {
+  margin-left: 2px;
+  height: 32px;
+  width: 220px;
+}
+.ac-upload-container .remove-file {
+  pointer-events: auto;
+  cursor: pointer;
+  color: #790609;
+}
